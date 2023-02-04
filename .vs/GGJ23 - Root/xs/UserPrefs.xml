@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{28ADC24A-EEFA-160C-9D3E-05AF1D1F8918}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CameraSwapSystem.cs">
+    <Files>
+      <File FileName="Assets/Actor.cs" Line="19" Column="9" />
+      <File FileName="Assets/CameraSwapSystem.cs" Line="7" Column="32" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GGJ23 - Root" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="CameraSwapSystem.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="32ba9b3a-9c2d-458b-be80-55e640f1f8bf" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
