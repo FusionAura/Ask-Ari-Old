@@ -8,7 +8,7 @@ public class Actor : MonoBehaviour
 {
     public Transform currentDest;
 
-    public List<Transform> Destinatons = new List<Transform>();
+    public List<Transform> Destinations = new List<Transform>();
 
     protected NavMeshAgent navMeshA;
 
@@ -18,7 +18,7 @@ public class Actor : MonoBehaviour
     {
         navMeshA = GetComponent<NavMeshAgent>();
         SetDestination();
-        currentDest = Destinatons[Random.Range(0, Destinatons.Count - 1)];
+        currentDest = Destinations[Random.Range(0, Destinations.Count - 1)];
 
     }
     public virtual void SetDestination()
@@ -32,7 +32,7 @@ public class Actor : MonoBehaviour
             {
                 if (!navMeshA.hasPath || navMeshA.velocity.sqrMagnitude == 0f)
                 {
-                    currentDest = Destinatons[Random.Range(0, Destinatons.Count - 1)];
+                    currentDest = Destinations[Random.Range(0, Destinations.Count - 1)];
                 }
             }
         }

@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 73565676}
   - component: {fileID: 73565675}
   - component: {fileID: 73565674}
+  - component: {fileID: 73565679}
   - component: {fileID: 73565678}
   m_Layer: 0
   m_Name: ObjFridge
@@ -250,6 +251,25 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &73565679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73565672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84effd9830929d84597bfeaf83b28935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentDest: {fileID: 1914700046}
+  Destinations:
+  - {fileID: 148198454}
+  actionName:
+  - Return to Origin
+  - Hello
+  - WTF are you doing?
 --- !u!1 &88675940
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,7 +545,7 @@ GameObject:
   - component: {fileID: 148198454}
   - component: {fileID: 148198456}
   - component: {fileID: 148198455}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ObjFridgePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1756,7 +1776,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174929450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.2969174, y: -1.7527838, z: -9.315007}
+  m_LocalPosition: {x: 5.2969174, y: -1.7527838, z: 2.6849928}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1872,7 +1892,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26834
+  m_Name: pb_Mesh42974
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2064,7 +2084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530455658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2288,7 +2308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634920649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.2969174, y: -1.7527838, z: -9.315007}
+  m_LocalPosition: {x: 5.2969174, y: -1.7527838, z: 2.6849928}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4644,22 +4664,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentDest: {fileID: 498503916}
-  Destinatons:
-  - {fileID: 498503916}
+  Destinations:
   - {fileID: 331972871}
   - {fileID: 239258794}
   - {fileID: 88675941}
   - {fileID: 455786910}
   - {fileID: 604447278}
+  - {fileID: 498503916}
   - {fileID: 114403903}
   - {fileID: 510661030}
   - {fileID: 1568427478}
-  - {fileID: 1193022405}
-  - {fileID: 148198454}
   tempHumanInteractions:
   - Praise
   - Insult
   - Belittle
+  Health: 0
+  MaxHealth: 5
   HungerMax: 25
   ComfortMax: 25
   RecreationMax: 25
@@ -4923,7 +4943,7 @@ PrefabInstance:
     - target: {fileID: 8939772068270662267, guid: 06a34783b7b0e4044aac1eff38049aa8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8939772068270662267, guid: 06a34783b7b0e4044aac1eff38049aa8,
         type: 3}

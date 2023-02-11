@@ -7,7 +7,9 @@ public class ActorHuman : Actor, IInteractables
 {
     [SerializeField]
     private List<string> tempHumanInteractions = new List<string>();
-    
+
+    [SerializeField] float Health = 0, MaxHealth = 5;
+
     private float Hunger = 0, Comfort = 0, Recreation = 0;
     [SerializeField] float HungerMax = 25, ComfortMax = 25, RecreationMax = 25;
     [SerializeField] float HungerMin = 5, ComfortMin = 5, RecreationMin = 5;
@@ -29,7 +31,7 @@ public class ActorHuman : Actor, IInteractables
     {
         navMeshA = GetComponent<NavMeshAgent>();
         SetDestination();
-        currentDest = Destinatons[Random.Range(0, Destinatons.Count - 1)];
+        currentDest = Destinations[Random.Range(0, Destinations.Count - 1)];
         Hunger = Random.Range(HungerMin, HungerMax);
         Comfort = Random.Range(ComfortMin, ComfortMax);
         Recreation = Random.Range(RecreationMin,RecreationMax);
@@ -101,7 +103,7 @@ public class ActorHuman : Actor, IInteractables
             {
                 if (!navMeshA.hasPath || navMeshA.velocity.sqrMagnitude == 0f )
                 {
-                    currentDest = Destinatons[Random.Range(0, Destinatons.Count - 1)];
+                    currentDest = Destinations[Random.Range(0, Destinations.Count - 1)];
                 }
             }
         }
