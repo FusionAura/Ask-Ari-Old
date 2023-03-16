@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_GameAssets/Level/Scenes/Scn_AriReborn.unity
+- path: Assets/_GameAssets/Level/Scenes/Kris_Camera_Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

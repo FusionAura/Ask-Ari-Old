@@ -7,9 +7,9 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.DE949528" = "game"
+	"last_search.DE949528" = "probuilder"
 	"OpenInspectorPreview.DE949528" = "0"
-	"currentGroup.DE949528" = "all"
+	"currentGroup.DE949528" = "menu"
 }
 providers = {
 	find = {
