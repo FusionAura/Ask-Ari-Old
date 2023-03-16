@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Rewired\Extras\ControlMapper\Scripts\ControlMapper_InputGrid.cs" />
+    <Compile Include="Assets\_GameAssets\Code\Scripts\Node.cs" />
     <Compile Include="Assets\Rewired\Extras\ControlMapper\Scripts\LanguageData.cs" />
     <Compile Include="Assets\Rewired\Examples\ControlRemapping1\Scripts\ControlRemappingDemo1.cs" />
     <Compile Include="Assets\Rewired\Extras\ControlMapper\Scripts\CustomSlider.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Assets\Rewired\Integration\UnityUI\RewiredEventSystem.cs" />
     <Compile Include="Assets\Rewired\Examples\DualShock4SpecialFeatures\Scripts\DualShock4SpecialFeaturesExample.cs" />
     <Compile Include="Assets\Rewired\Extras\ControlMapper\Scripts\CalibrationWindow.cs" />
+    <Compile Include="Assets\_GameAssets\Code\Scripts\ActorFridge.cs" />
     <Compile Include="Assets\Rewired\Examples\CustomControllersTouch\Scripts\CustomControllerDemo_Player.cs" />
     <Compile Include="Assets\_GameAssets\Code\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Rewired\Integration\UnityUI\RewiredStandaloneInputModule.cs" />
@@ -95,6 +97,7 @@
     <Compile Include="Assets\_GameAssets\Code\Scripts\Player\HologramCamera.cs" />
     <Compile Include="Assets\Rewired\Examples\GamepadTemplateUI\Scripts\ControllerUIEffect.cs" />
     <Compile Include="Assets\_GameAssets\Code\Scripts\ActorHuman.cs" />
+    <Compile Include="Assets\_GameAssets\Code\Scripts\Appliance.cs" />
     <Compile Include="Assets\Rewired\Extras\ControlMapper\Examples\ControlMapperDemo\Scripts\ControlMapperDemoMessage.cs" />
     <Compile Include="Assets\Rewired\Extras\ControlMapper\Scripts\CustomToggle.cs" />
     <Compile Include="Assets\Rewired\Extras\ControlMapper\Scripts\ToggleInfo.cs" />
@@ -129,7 +132,6 @@
     <Compile Include="Assets\Rewired\Extras\ControlMapper\Scripts\UISliderControl.cs" />
     <Compile Include="Assets\Rewired\Extras\ControlMapper\Scripts\ScrollbarVisibilityHelper.cs" />
     <Compile Include="Assets\Rewired\Extras\ControlMapper\Scripts\UIGroup.cs" />
-    <Compile Include="Assets\_GameAssets\Code\Scripts\ActorFridge.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

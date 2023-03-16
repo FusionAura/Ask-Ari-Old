@@ -4,21 +4,35 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using Rewired;
+using TMPro;
 
 public class CameraSwapSystem : MonoBehaviour
 {
     [SerializeField]
+    private Node CurrentNode;
+    int currentNodeIndex = 0;
+    private Camera CurrentCamera;
+
+    [SerializeField]
+    private List<Node> HouseNodes = new List<Node>();
+
+    [SerializeField]
     internal int playerID = 0;
     internal Player rewiredInput;
 
-    private Room currentRoom;
-    public List<Room> RoomList = new List<Room>();
-    int currentRoomIndex = 0;
+    [SerializeField]
+    private Transform TextPrefab;
+    [SerializeField]
+    private Transform buttonContainer;
+    [SerializeField]
+    private Transform AppliancesContainer;
+    [SerializeField]
+    private Transform ActionListContainer;
+
 
     public Text CameraName;
 
     public Vector2 CamRotation;
-    // Start is called before the first frame update
 
     private void Awake()
     {
@@ -26,9 +40,9 @@ public class CameraSwapSystem : MonoBehaviour
     }
     void Start()
     {
-        currentRoom = RoomList[currentRoomIndex];
-        CameraName.text = "CAM " + currentRoom.Name;
-        currentRoom.currentRot = currentRoom.currentCam.transform.localRotation.eulerAngles;
+        CurrentNode = HouseNodes[currentNodeIndex];
+        NodesButtonList();
+        ApplianceList();
     }
 
     // Update is called once per frame
@@ -36,39 +50,92 @@ public class CameraSwapSystem : MonoBehaviour
     {
         CamRotation.x = rewiredInput.GetAxis("Horizontal");
         CamRotation.y = rewiredInput.GetAxis("Vertical");
-        currentRoom.currentCam.transform.localRotation = Quaternion.Euler(currentRoom.currentRot+new Vector3(-CamRotation.y, CamRotation.x ));
-        if (rewiredInput.GetButtonDown("CamPrevious"))
+    }
+
+    private void NodesButtonList()
+    {
+        for (int i = 0; i < CurrentNode.LinkingNodes.Count; i++)
         {
-            currentRoomIndex--;
-        }
+            GameObject listoption = Instantiate(TextPrefab.gameObject, buttonContainer);
+            listoption.name = CurrentNode.LinkingNodes[i].Room_Name;
 
-        if (rewiredInput.GetButtonDown("CamNext"))
+            TextMeshProUGUI textComp = listoption.GetComponentInChildren<TextMeshProUGUI>();
+            textComp.text = CurrentNode.LinkingNodes[i].name;
+            int tmp = i;
+            listoption.GetComponent<Button>().onClick.AddListener(delegate { SwitchNode(tmp); });
+        }
+    }
+
+    private void ApplianceList()
+    {
+        for (int i = 0; i < CurrentNode.Interactables.Count; i++)
         {
-            currentRoomIndex++;
+            GameObject listoption = Instantiate(TextPrefab.gameObject, AppliancesContainer);
+            listoption.name = CurrentNode.Interactables[i].name;
+
+            TextMeshProUGUI textComp = listoption.GetComponentInChildren<TextMeshProUGUI>();
+            textComp.text = CurrentNode.Interactables[i].name;
+            int tmp = i;
+            GameObject interactableAppliance = CurrentNode.Interactables[i].gameObject;
+            listoption.GetComponent<Button>().onClick.AddListener(delegate { InteractionList(interactableAppliance); });
         }
+    }
 
-        if (currentRoomIndex < 0)
-            currentRoomIndex += RoomList.Count;
-        else if (currentRoomIndex > RoomList.Count - 1)
+    void InteractionList(GameObject interactedObj)
+    {
+        ClearApplianceActions();
+        Debug.Log(interactedObj);
+        List<string> possibleActions = interactedObj.GetComponent<IInteractables>().ReturnPossibleActions();
+        for (int i = 0; i < possibleActions.Count; i++)
+        {
+            GameObject listoption = Instantiate(TextPrefab.gameObject, ActionListContainer);
+            listoption.name = possibleActions[i];
 
-            currentRoomIndex = 0;
+            TextMeshProUGUI textComp = listoption.GetComponentInChildren<TextMeshProUGUI>();
+            textComp.text = possibleActions[i];
+            int tmp = i;
+            listoption.GetComponent<Button>().onClick.AddListener(delegate { interactedObj.GetComponent<IInteractables>().Interact(tmp); });
+        }
+    }
+
+    void SwitchNode(int tmp)
+    {
+        ClearLists();
+
+        CurrentNode = CurrentNode.LinkingNodes[tmp];
         SwapCamera();
-
+        ApplianceList();
+        NodesButtonList();
     }
 
     void SwapCamera()
     {
-        currentRoom.currentCam.gameObject.SetActive(false);
-        
-        currentRoom = RoomList[currentRoomIndex];
-        CameraName.text = "CAM " + currentRoom.Name;
-        currentRoom.currentCam.gameObject.SetActive(true);
+        CurrentNode.Cam.currentCam.GetComponent<Camera>().enabled = false;
+        CurrentCamera = CurrentNode.Cam.currentCam;
+        CameraName.text = "CAM " + CurrentNode.Room_Name;
+        CurrentNode.Cam.currentCam.GetComponent<Camera>().enabled = true;
 
-        currentRoom.currentRot = currentRoom.currentCam.transform.localRotation.eulerAngles;
+        CurrentNode.Cam.currentRot = CurrentNode.Cam.currentCam.transform.localRotation.eulerAngles;
+    }
+
+    void ClearLists()
+    {
+        foreach (Transform a in buttonContainer)
+            Destroy(a.gameObject);
+        foreach (Transform a in AppliancesContainer)
+            Destroy(a.gameObject);
+        foreach (Transform a in ActionListContainer)
+            Destroy(a.gameObject);
+    }
+
+    void ClearApplianceActions()
+    {
+        foreach (Transform a in ActionListContainer)
+            Destroy(a.gameObject);
     }
 }
 [System.Serializable]
-public class Room
+public class CTVCam
 {
     public string Name;
     public Camera currentCam;

@@ -1,5 +1,194 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2941982637501044293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8161369393529558229}
+  - component: {fileID: 6179609558275656674}
+  m_Layer: 5
+  m_Name: SwitchRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8161369393529558229
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2941982637501044293}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8939772068843772133}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 261, y: 58}
+  m_SizeDelta: {x: 440.26, y: 523.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6179609558275656674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2941982637501044293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 16
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 1
+  m_ReverseArrangement: 0
+--- !u!1 &4655238543935186306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5603357698201292649}
+  - component: {fileID: 7738493260846388421}
+  m_Layer: 5
+  m_Name: Actions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5603357698201292649
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4655238543935186306}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8939772068843772133}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 718, y: -217}
+  m_SizeDelta: {x: 440.26, y: 587.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7738493260846388421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4655238543935186306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!1 &6421929485596525927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2978237519486614006}
+  - component: {fileID: 4519289008334809700}
+  m_Layer: 5
+  m_Name: AppliancesContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2978237519486614006
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6421929485596525927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8939772068843772133}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 718, y: 312}
+  m_SizeDelta: {x: 440.26, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4519289008334809700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6421929485596525927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &8939772067174233649
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,6 +301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8939772067342789528}
   - component: {fileID: 8939772067342789531}
+  - component: {fileID: 618713730}
   m_Layer: 0
   m_Name: ObjKitchenCam
   m_TagString: MainCamera
@@ -177,6 +367,30 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &618713730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8939772067342789533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1940a0b6bdec1b40901395ce09b994f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Room_Name: Kitchen
+  Interactables:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  LinkingNodes:
+  - {fileID: 2140479174}
+  - {fileID: 84049734}
+  Cam:
+    Name: Kitchen
+    currentCam: {fileID: 8939772067342789531}
+    currentRot: {x: 0, y: 0, z: 0}
 --- !u!1 &8939772067349240401
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,13 +536,14 @@ GameObject:
   m_Component:
   - component: {fileID: 8939772067519454041}
   - component: {fileID: 8939772067519454039}
+  - component: {fileID: 2140479174}
   m_Layer: 0
   m_Name: ObjLivingRoomCam
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8939772067519454041
 Transform:
   m_ObjectHideFlags: 0
@@ -351,7 +566,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8939772067519454040}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -387,6 +602,28 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &2140479174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8939772067519454040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1940a0b6bdec1b40901395ce09b994f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Room_Name: Living Room
+  Interactables:
+  - {fileID: 0}
+  LinkingNodes:
+  - {fileID: 84049734}
+  - {fileID: 618713730}
+  Cam:
+    Name: Living Room
+    currentCam: {fileID: 8939772067519454039}
+    currentRot: {x: 0, y: 0, z: 0}
 --- !u!1 &8939772067534714088
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,8 +659,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 262, y: 309}
-  m_SizeDelta: {x: 1000, y: 1000}
+  m_AnchoredPosition: {x: 262, y: 490}
+  m_SizeDelta: {x: 1000, y: 128.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8939772067534714087
 CanvasRenderer:
@@ -477,13 +714,14 @@ GameObject:
   m_Component:
   - component: {fileID: 8939772067738362662}
   - component: {fileID: 8939772067738362660}
+  - component: {fileID: 84049734}
   m_Layer: 0
   m_Name: ObjHallwayCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8939772067738362662
 Transform:
   m_ObjectHideFlags: 0
@@ -506,7 +744,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8939772067738362665}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -520,14 +758,14 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
+    width: 0.5
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 951
@@ -542,6 +780,27 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &84049734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8939772067738362665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1940a0b6bdec1b40901395ce09b994f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Room_Name: Hallway
+  Interactables: []
+  LinkingNodes:
+  - {fileID: 618713730}
+  - {fileID: 2140479174}
+  Cam:
+    Name: Hallway
+    currentCam: {fileID: 8939772067738362660}
+    currentRot: {x: 0, y: 0, z: 0}
 --- !u!1 &8939772067842254588
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,7 +985,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8939772068270662266}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -751,17 +1010,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d5b3426ba2543e8812792419726faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HouseNodes:
+  - {fileID: 618713730}
+  - {fileID: 2140479174}
+  - {fileID: 84049734}
   playerID: 0
-  RoomList:
-  - Name: Kitchen
-    currentCam: {fileID: 8939772067342789531}
-    currentRot: {x: 0, y: 0, z: 0}
-  - Name: Living Room
-    currentCam: {fileID: 8939772067519454039}
-    currentRot: {x: 0, y: 0, z: 0}
-  - Name: Hallway
-    currentCam: {fileID: 8939772067738362660}
-    currentRot: {x: 0, y: 0, z: 0}
+  TextPrefab: {fileID: 5280572934507133441, guid: b0a4f13aaff7a614d883d4331b54e2e6,
+    type: 3}
+  buttonContainer: {fileID: 8161369393529558229}
+  AppliancesContainer: {fileID: 2978237519486614006}
+  ActionListContainer: {fileID: 5603357698201292649}
   CameraName: {fileID: 8939772069176026874}
   CamRotation: {x: 0, y: 0}
 --- !u!1 &8939772068727416308
@@ -909,6 +1167,9 @@ RectTransform:
   - {fileID: 8939772067534714089}
   - {fileID: 8939772069176026877}
   - {fileID: 8939772069048282995}
+  - {fileID: 8161369393529558229}
+  - {fileID: 2978237519486614006}
+  - {fileID: 5603357698201292649}
   m_Father: {fileID: 8939772067174233805}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -930,7 +1191,7 @@ GameObject:
   - component: {fileID: 8939772069048282993}
   - component: {fileID: 8939772069048282992}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BTN_Hologram
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -943,7 +1204,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8939772069048282994}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.7415, y: 2.7415, z: 2.7415}
   m_ConstrainProportionsScale: 0
@@ -954,7 +1215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 273, y: 369}
+  m_AnchoredPosition: {x: 255, y: 406}
   m_SizeDelta: {x: 160, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8939772069048282894

@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 1486353930553847660}
   - component: {fileID: 2001004244542565683}
   m_Layer: 5
-  m_Name: ObjButtonOption
+  m_Name: ObjOSButtonOption 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -163,7 +163,7 @@ RectTransform:
   m_GameObject: {fileID: 5310583129502674293}
   m_LocalRotation: {x: -0, y: 2.8310683e-15, z: 0.000000014901159, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.00006869111}
-  m_LocalScale: {x: 0.01369236, y: 0.01369236, z: 0.01369236}
+  m_LocalScale: {x: 1.8845398, y: 1.8845395, z: 1.8845396}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6724719193437457243}
@@ -173,7 +173,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 204.65, y: 30}
+  m_SizeDelta: {x: 230, y: 30}
   m_Pivot: {x: 0.007, y: 0.993}
 --- !u!222 &8747674247608792304
 CanvasRenderer:

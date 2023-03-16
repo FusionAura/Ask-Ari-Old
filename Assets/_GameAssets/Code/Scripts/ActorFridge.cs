@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ActorFridge : Actor, IInteractables
+public class ActorFridge : Appliance, IInteractables
 {
     Vector3 StartingPos;
     Quaternion StartingRot;
